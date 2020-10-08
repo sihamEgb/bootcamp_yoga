@@ -1,21 +1,18 @@
 import React from "react";
 
-import Video from '../utilities/Video';
+import Video from '../core/Video';
 
 // APIs
-import youtube from '../apis/youtubeApi';
-import wikipedia from '../apis/wikipediaApi';
+import youtube from '../../apis/youtubeApi';
+import wikipedia from '../../apis/wikipediaApi';
 // CSS
-import './pose.css';
-
+import './Pose.css';
 
 const apiKey = 'AIzaSyBFK25Z_052fL4LZRScbt9L94HWoFn1Rlw';
 class Pose extends React.Component{
 	
-	
 	constructor(props){
 		super(props);
-		console.log("props",props);
 		this.state = {
 			video:null,
 			data:null,
@@ -39,11 +36,7 @@ class Pose extends React.Component{
 				format: 'json',
       },
 		});
-
-		// setResults(data.query.search);
-		console.log("term searched",term);
-		console.log("wikipedia response",data.query.search);
-    this.setState({data:data.query.search[0]});
+	  this.setState({data:data.query.search[0]});
 		
 	}
   getVideoData = async() => {
@@ -60,11 +53,7 @@ class Pose extends React.Component{
     });
     console.log(response.data.items[0]);
     this.setState({video:response.data.items[0]});
-		
-    // return response.data.items[0];
-    // videos: response.data.items,
-    // selectedVideo: response.data.items[0],
-  }
+	  }
   componentDidMount(){
 		this.getVideoData();
 		this.getWikipediaData();
@@ -77,20 +66,11 @@ class Pose extends React.Component{
 				key={this.state.data.pageid}
 				className = "data"
 				>
-					<a
+					<a className="poseLink"
 					href={`https://en.wikipedia.org?curid=${this.state.data.pageid}`}
 					>Read more about {this.state.data.title} in Wikipedia</a>
 	
 				</div>
-			// <div key={this.state.data.pageid} className="item">
-			// <div className="right floated content">
-			// 	<a
-			// 		className="ui button"
-			// 		href={`https://en.wikipedia.org?curid=${result.pageid}`}
-			// 	>
-			// 		Go
-			// 	</a>
-			// </div>
 			);
 		}
 		return null;
@@ -116,20 +96,25 @@ class Pose extends React.Component{
   
   render(){
 		return (
-			<div>
-				<div>
+			<div className="poseContainer">
+				<div className="imageContainer">
+					<img
+						alt={this.pose.english_name}
+						// className="ui image"
+						src={this.pose.img_url}
+      		/>
+				</div>
+				<div className="poseTitle">
 					{this.pose.english_name}
 				</div>
-				<div>
+				<div className="poseSubtitle">
 					{this.pose.sanskrit_name}
 				</div>
-				<div className="imageContainer">
-
-				</div>
-				<div className="videoContainer">
+				
+				<div className="poseVideoContainer">
 					{this.renderVideo()}
 				</div>
-				<div className="externalDataContainer">
+				<div className="poseExternalDataContainer">
 					{this.renderData()}
 				</div>			
 			</div>

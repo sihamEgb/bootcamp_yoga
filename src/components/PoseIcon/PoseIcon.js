@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// css
 import './poseIcon.css';
-import yogaData from '../data/yogaData';
+
+// data
+import yogaData from '../../data/yogaData';
 class PoseIcon extends React.Component{
 	
 	// gets the poseId and poses array
 	constructor(props){
 		super(props);
-		console.log("props",props);
 		this.pose = yogaData.getPoseById(props.poseId);
 		this.poses = yogaData.getData();
 		// english_name
@@ -18,7 +20,6 @@ class PoseIcon extends React.Component{
 	}
 	
   onPoseIconClick(){
-		console.log("icon clicked");
 	}
   
   render(){
@@ -28,7 +29,7 @@ class PoseIcon extends React.Component{
 				className="poseIconContainer"
 				key={pose.id}
 				>
-				<Link 
+				<Link className="poseIconLink"
 					to={{pathname:`/poses/${pose.id}`,
 					pose: pose}}
 				>

@@ -1,0 +1,27 @@
+.poseIconContainer{
+	min-width: 200px;
+	padding: 5px;
+	border: 2px solid black;
+	margin: 5px;
+	border-radius: 10px;
+	background-color:rgba(223, 121, 67, 0.8);
+}
+.poseIconContainer:hover{
+	background-color: #e4c144;
+	/* rgba(223, 121, 67, 0.2); */
+	border: 2px solid white;
+
+}
+.poseIconImg{
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+.poseIconTitle{
+	color:#693F27;
+	font-size: 1.5rem;
+}
+.poseIconLink{
+	text-decoration: none;
+
+}

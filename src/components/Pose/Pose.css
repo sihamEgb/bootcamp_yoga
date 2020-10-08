@@ -1,0 +1,32 @@
+.poseContainer{
+	padding: 5px;
+}
+.imageContainer{
+	width: 100px;
+	height: 100px;
+}
+.poseTitle{
+	font-size: 3rem;
+	text-align: left;
+}
+.poseSubtitle{
+	font-size: 1.5rem;
+	text-align: left;
+}
+.poseVideoContainer{
+
+}
+.poseExternalDataContainer{
+	/* text-decoration: none; */
+	text-align: left;
+	margin-bottom: 100px;
+	background-color: #693F27;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 1rem;
+}
+.poseLink{
+	color: #e4c144;
+	text-decoration: none;
+
+}

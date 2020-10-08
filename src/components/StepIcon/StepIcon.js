@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // import './poseIcon.css';
-import yogaData from '../data/yogaData';
+import yogaData from '../../data/yogaData';
 class StepIcon extends React.Component{
 	
 	// gets the poseId and poses array
@@ -14,8 +14,6 @@ class StepIcon extends React.Component{
 		// id
 		// img_url
 	}
-	
-	
 	
   onPoseIconClick(){
 		console.log("step clicked");

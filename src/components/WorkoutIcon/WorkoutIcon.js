@@ -1,21 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import './poseIcon.css';
+import './WorkoutIcon.css';
   
 class WorkoutIcon extends React.Component{
 	
-	constructor(props){
-		super(props);
-		console.log("props",props);
 		// this.state = {video:null};
 		// workout_name
 		// id
 		// arr of steps
 		//
-	}
-  
-
   
   render(){
 		const workout = this.props.workout;
@@ -24,12 +18,15 @@ class WorkoutIcon extends React.Component{
 				className="workoutContainer"
 				key={workout.id}
 				>
-				<Link 
+				<Link className="workoutCard"
 					to={{pathname:`/workouts/${workout.id}`,
 					workout: workout}}
 				>
 					<div className="workoutIconTitle">
 						{workout.title}
+					</div>
+					<div className="workoutStepsNumber">
+						total steps:{workout.steps.length}
 					</div>
 					<div className="poseIconImg">
 					{/* <img

@@ -1,0 +1,19 @@
+.workoutManagerContainer{
+
+}
+.workoutManagerTitle{
+	font-size: 2rem;
+	font-family: 'MuseoModerno', cursive;
+	text-align: left;
+}
+.newWorkoutContainer{
+
+}
+.workoutsContainer{
+	display: flex;
+	flex-direction: column;
+}
+.createWorkoutLink{
+	text-decoration: none;
+	color:black;
+}

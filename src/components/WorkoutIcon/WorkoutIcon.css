@@ -1,0 +1,24 @@
+.workoutContainer{
+	/* width:100%; */
+	min-height: 5vh;
+	background-color: #FCEDCC;
+	border-radius: 10px;
+	box-shadow: 1px 2px  #A4667B;
+	margin: 10px;
+	padding: 5px;
+	text-align: left;
+}
+.workoutContainer:hover{
+	background-color: #A4667B;
+	transition: ease-in-out 0.5s;
+
+}
+.workoutCard{
+	padding: 5px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.workoutStepsNumber{
+	font-size: 1rem;
+	
+}

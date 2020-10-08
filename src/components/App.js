@@ -5,14 +5,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 // import yogaAPI from '../apis/yogaApi';
 
 // import Homepage from "./Homepage";
-import Header from "./Header";
-import PosesManager from './PosesManager';
-import Pose from './Pose';
-import WorkoutsManager from './WorkoutsManager';
-import Workout from './Workout';
-import Session from './Session';
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import PosesManager from './PosesManager/PosesManager';
+import Pose from './Pose/Pose';
+import WorkoutsManager from './WorkoutManager/WorkoutsManager';
+import Workout from './Workout/Workout';
+import Session from './Session/Session';
+import Homepage from './Homepage/Homepage';
 // CSS
-  
+import './App.css';
 import yogaData from '../data/yogaData'
 class App extends React.Component{
   
@@ -49,25 +51,32 @@ class App extends React.Component{
   render(){
    
       return (
-          <div>
-            Hello world
+          <div className="root">
+             
              <BrowserRouter>
-              <div>
-                <Header
-                poses = {this.state.poses}
-                />
-                {/* <Route exact path='/' component={Homepage} /> */}
-                <Route exact path='/poses' component={PosesManager} />
-                <Route exact path='/poses/:id' component={Pose} />
+                <div>
+                  <Header className="headerContainer"
+                  poses = {this.state.poses}
+                  />
+                </div>
 
-                <Route exact path='/workouts' component={WorkoutsManager} />
-                <Route exact path='/workouts/:id' component={Workout} />
-                
-                <Route exact path='/session' component={Session} />
-                
-                {/* <Route exact path='/newworkout component={WorkoutNew} /> */}
-                {/* <Route exact path='/history' component={History2} /> */}
-              </div>
+                <div className="bodyContainer">
+                    <Route exact path='/' component={Homepage} />
+                    <Route exact path='/poses' component={PosesManager} />
+                    <Route exact path='/poses/:id' component={Pose} />
+
+                    <Route exact path='/workouts' component={WorkoutsManager} />
+                    <Route exact path='/workouts/:id' component={Workout} />
+                    
+                    <Route exact path='/session' component={Session} />
+                    
+                    {/* <Route exact path='/newworkout component={WorkoutNew} /> */}
+                    {/* <Route exact path='/history' component={History2} /> */}
+
+                </div>
+                <div className="footerContainer">
+                  <Footer/>
+                </div>
             </BrowserRouter>
           </div>
         );

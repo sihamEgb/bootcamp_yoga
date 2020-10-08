@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import WorkoutIcon from './WorkoutIcon';
+import WorkoutIcon from '../WorkoutIcon/WorkoutIcon';
 
-import workoutApi from '../apis/workoutApi';
+import workoutApi from '../../apis/workoutApi';
 
+import './WorkoutsManager.css';
 class WorkoutsManager extends React.Component {
   constructor(props) {
     super(props);
@@ -34,12 +35,16 @@ class WorkoutsManager extends React.Component {
 	}
   render() {
     return (
-    <div className="bodyContainer">
+    <div className="workoutManagerContainer">
 			<div className="newWorkoutContainer">
-				<Link to='/newworkout' className='item'>Create Workout</Link>
+				<Link className="createWorkoutLink"
+					to='/newworkout' 
+					>Create Workout</Link>
 			</div>
       <div className="workoutsContainer">
-				All Workouts
+				<div className="workoutManagerTitle">
+					All Workouts
+				</div>
 				{this.renderWorkouts()}
       </div>
     </div>

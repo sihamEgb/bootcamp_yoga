@@ -4,7 +4,7 @@ const savedWorkout1 = {
 	// each step 
 	// pose id
 	// time in seconds
-	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7},{id:3,poseId:4,time:10},{id:4,poseId:10,time:10},{id:4,poseId:10,time:10}],
+	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7},{id:3,poseId:4,time:10},{id:4,poseId:10,time:50},{id:5,poseId:10,time:10}],
 }
 const savedWorkout2 = {
 	id:2,

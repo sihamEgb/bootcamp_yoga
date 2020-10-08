@@ -1,38 +1,31 @@
-.App {
+/* Colors */
+/* Earth Colors */
+/* #693F27 brown */
+/* #e4c144 dark yellow */
+/*  #DF7943 orange */
+/*  #DF7943 */
+/*  #C24B39 red */
+.headerContainer{
+  /* background-color: blue; */
+}
+.bodyContainer{
+  position: relative;
+  /* width: 95%; */
+  min-height: 70vh;
+  font-size: 1rem;
   text-align: center;
+  margin: auto auto;
+  /* padding: 5px; */
+  /* color:red; */
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'MuseoModerno', cursive; */
+  background-image: url('./images/landscape-nature-mountain-cloud-sun-fog-1322773-pxhere.com.jpg');
+  /* background-image: url('./images/free-abstract-background-12-vector.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* image-resolution: 100%; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footerContainer{
+  /* background-color: red; */
 }

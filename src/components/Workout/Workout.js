@@ -2,42 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // import PoseIcon from './PoseIcon'
-import StepIcon from './StepIcon';
+import StepIcon from '../StepIcon/StepIcon';
 // CSS
-// import './pose.css';
+import './Workout.css';
 
 
 class Workout extends React.Component{
 	
 	constructor(props){
 		super(props);
-		// this.poses = this.props.location.state.poses;
-		this.steps = props.location.workout.steps || [];
-
-		console.log("workout poses",this.poses);
-		console.log(props);
-		// TO DELETE
-		// this.workout = {
-		// 	id:2,
-		// 	title:'Level Up',
-		// 	// each step 
-		// 	// pose id
-		// 	// time in seconds
-		// 	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7},{id:3,poseId:4,time:10},{id:4,poseId:10,time:10}],
-		// }
-		// console.log("props",this.workout);
 		this.workout = props.location.workout || [];
-
-		this.state = {
-		
-		};
-	
 	}
 	
 	renderSteps(){
 		if(this.workout.steps)
 		{
-			console.log("in render steps",this.workout.steps)
 			return ( this.workout.steps.map(step => {
 				return (
 					<StepIcon
@@ -56,7 +35,7 @@ class Workout extends React.Component{
 
   render(){
 		return (
-			<div>
+			<div className="workoutContainer">
 				<div className="workoutTitle">
 					{this.workout.title}
 				</div>
@@ -71,8 +50,8 @@ class Workout extends React.Component{
 				<button>Delete</button>
 				<button>Duplicate</button>
 			</div>
-			<div>
-				<div>
+			<div className="workoutStepsContainer">
+				<div className="workoutStepsContainerTitle">
 					all steps
 				</div>
 				<div>

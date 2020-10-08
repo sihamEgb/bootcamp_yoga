@@ -1,0 +1,27 @@
+.footerContainer{
+	background-color: #A4667B;
+	color:#e4c144;
+	/* position: absolute; */
+	width: 100%;
+	font-size: 1.2rem;
+	text-align: left;
+	/* margin-bottom:5px; */
+	/* height: 5vh; */
+
+}
+.footerContent {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	/* background-color: #F8F8F8; */
+	/* border-top: 1px solid #E7E7E7; */
+	padding: 10px;
+	/* position: fixed; */
+	/* left: 0; */
+	/* bottom: 0; */
+	/* height: 100px; */
+	width: 100%;
+}
+.header-link{
+	padding: 10px;
+}

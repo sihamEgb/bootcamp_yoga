@@ -1,0 +1,85 @@
+.homepage-bodyContainer{
+	/* background-color: red; */
+	/* height: 100%; */
+	width:100%;
+	/* margin: auto auto; */
+	/* margin: 0; */
+  /* position: relative; */
+	/* margin-top: 50%; */
+	position: absolute;
+  top: 50%;
+	transform: translateY(-50%);
+
+}
+.homepage-contentContainer{
+	padding: 2rem;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: center; */
+}
+.homepage-subtitle{
+	font-size: 1.5rem;
+	font-family: 'MuseoModerno', cursive;
+	margin-top: 50px;
+	padding: 5px;
+	text-align: left;
+	text-decoration: underline;
+}
+.homepage-title{
+	font-size: 2rem;
+	padding: 5px;
+	margin-top: 10px;
+	text-align: left;
+}
+.homepage-mainTitle{
+	font-size: 4rem;
+	color:black;
+	font-family: 'MuseoModerno', cursive;
+	/* background-color: blue; */
+}
+/* .homepage-mainTitle:hover{
+	transform: translateY(-5%);
+} */
+.homepage-mainAction{
+	font-size: 2rem;
+	text-align: left;
+	margin-left: 25%;
+	margin-top: 1rem;
+	animation-duration: 0.5s;
+  animation-name: effects;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.textEffects{
+	background-color: tomato;
+	color:white;
+	transition: all ease-in 1s;
+}
+.homepage-link{
+	text-decoration: none;
+	color:#e4c144;
+	padding: 8px;
+	border: 2px solid #DF7943;
+	border-radius: 15px;
+}
+.homepage-link:hover{
+	background-color: #e4c144;
+	color:white;
+}
+
+@keyframes effects {
+  from {
+		transform: translateY(-3%);
+
+		/* font-size: 4rem; */
+		/* width: 100%; */
+  }
+
+  to {
+			transform: translateY(3%);
+
+		/* width: 90%; */
+
+    /* font-size: 4.1rem; */
+  }
+}

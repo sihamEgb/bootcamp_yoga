@@ -1,8 +1,32 @@
+TODO - styling
+- single pose
+- all workouts
+- singe workout
+- training
+
+
+APIs
+- workoutAPI
+- yogaAPI + data
+
+- read about project hierarchy react
 - workout API
 - local storage
-- besic features
-- CSS
-- back buttons
-
+- basic features
 - add trasnition effects
 - add some abstract images and effects
+
+
+
+- back buttons
+- workoutAPI move to data
+
+
+installs:
+axios
+react-router-dom
+react-slick
+slick-carousel
+react-stopwatch
+react-countdown
+react-image-webp
