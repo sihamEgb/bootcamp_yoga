@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Header.css'
 
-import  imageLogo from '../images/png-clipart-chakra-meditation-watercolor-painting-yoga-yoga-computer-wallpaper-sports.png';
+// import  imageLogo from '../images/png-clipart-chakra-meditation-watercolor-painting-yoga-yoga-computer-wallpaper-sports.png';
 const Header = (props) => {
   console.log("Header",props);
   return (

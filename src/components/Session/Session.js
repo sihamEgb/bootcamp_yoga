@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from '../core/MySlider';
+// import Slider from '../core/MySlider';
 import yogaData from '../../data/yogaData';
 import Countdown from "react-countdown";
 
-import yogaApi from "../../apis/yogaApi";
+// import yogaApi from "../../apis/yogaApi";
 
 // CSS
 

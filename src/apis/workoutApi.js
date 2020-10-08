@@ -16,9 +16,8 @@ const savedWorkout2 = {
 }
 const workouts = [savedWorkout1,savedWorkout2];
 // get data from storage
-function initData(){
-
-}
+// function initData(){
+// }
 function getWorkouts(){
 	return workouts;
 }
