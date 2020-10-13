@@ -1,18 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import Slider from '../core/MySlider';
 import yogaData from '../../data/yogaData';
 import Countdown from "react-countdown";
-
+import './Session.css';
 // import yogaApi from "../../apis/yogaApi";
 
 // CSS
 
 class Session extends React.Component{
 	
-	
 	constructor(props){
 		super(props);
-		// console.log("props",props);
 		this.state = {
 			currentStepIndex:0,
 			isWorkoutComplete:false,
@@ -36,7 +35,7 @@ class Session extends React.Component{
 	onStepComplete = () => {
 		console.log("step complete");
 		// we finished the workout
-		if(this.state.currentStepIndex === this.workout.steps.length)
+		if(this.state.currentStepIndex === this.workout.steps.length-1)
 		{
 			this.setState({isWorkoutComplete:true});
 		}
@@ -47,23 +46,40 @@ class Session extends React.Component{
 	}
 	
   render(){
-		const currentStep = this.workout.steps[this.state.currentStepIndex];
-		const currentPose = yogaData.getPoseById(currentStep.id);
-		const time = currentStep.time * 1000 + Date.now();
+		console.log("in render",this.state.isWorkoutComplete);
 		if(this.state.isWorkoutComplete)
 		{
 			return (
 				<div>
-					<div>Thanks for today</div>
-					<div>Go to Homepage?</div>
-					<div>Go to Workouts?</div>
+					<div className="sessionFinishTitle">Thanks for today</div>
+					<div className="SessionActionContainer">
+						<Link 
+							className='header-logo header-nav-item'
+							to='/' 
+						>
+								Homepage
+						</Link>
+						<Link 
+          		className='header-nav-item'
+              to={{
+                pathname:'/workouts' ,
+                // state: {poses: props.poses}
+              }}
+          	>
+								More Workouts
+						</Link>
+
+					</div>
 				</div>
 			);
 		}
+		const currentStep = this.workout.steps[this.state.currentStepIndex];
+		const currentPose = yogaData.getPoseById(currentStep.id);
+		const time = currentStep.time * 1000 + Date.now();
 		return (
-			<div>
-				<div className="title">
-						workout steps
+			<div className="sessionCardContainer">
+				<div className="sessionTitle">
+						{this.workout.title}
 				</div>
 				<div className="countdownContainer">
 				<Countdown 
@@ -75,7 +91,7 @@ class Session extends React.Component{
 				</div>
 				<div className="poseContainer">
 						<div>{currentPose.english_name}</div>
-						<img
+						<img className="imageContainer"
 								alt={currentPose.english_name}
 								// className="ui image"
 								src={currentPose.img_url}

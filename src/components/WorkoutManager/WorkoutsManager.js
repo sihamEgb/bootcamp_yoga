@@ -36,17 +36,19 @@ class WorkoutsManager extends React.Component {
   render() {
     return (
     <div className="workoutManagerContainer">
-			<div className="newWorkoutContainer">
-				<Link className="createWorkoutLink"
-					to='/newworkout' 
-					>Create Workout</Link>
-			</div>
+			
       <div className="workoutsContainer">
 				<div className="workoutManagerTitle">
 					All Workouts
 				</div>
 				{this.renderWorkouts()}
       </div>
+
+			<div className="newWorkoutContainer">
+				<Link className="createWorkoutLink"
+					to='/newworkout' 
+					>Add New Workout</Link>
+			</div>
     </div>
     );
   }

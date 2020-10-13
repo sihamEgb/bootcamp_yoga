@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-// import './poseIcon.css';
+import './StepIcon.css';
 import yogaData from '../../data/yogaData';
 class StepIcon extends React.Component{
 	
@@ -27,15 +27,14 @@ class StepIcon extends React.Component{
 				className="stepIconContainer"
 				key={step.id}
 				>
-				<div>
-						<div className="poseIconImg">
-						<img
+				<div className="stepIconContentContainer">
+						<div className="poseIconImgContainer">
+						<img className="poseIconImg"
 							alt={this.pose.english_name}
 							// className="ui image"
 							src={this.pose.img_url}
 						/>
 						</div>
-
 				</div>
 			</div>
 			);

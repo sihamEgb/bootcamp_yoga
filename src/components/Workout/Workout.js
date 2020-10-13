@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 // import PoseIcon from './PoseIcon'
 import StepIcon from '../StepIcon/StepIcon';
+import Button from '../core/Button';
 // CSS
 import './Workout.css';
-
 
 class Workout extends React.Component{
 	
@@ -45,27 +45,38 @@ class Workout extends React.Component{
 				<div className="workoutLevel">
 					{this.workout.basic}
 				</div>
-			<div className="actionsButton">
-				<button>Edit</button>
-				<button>Delete</button>
-				<button>Duplicate</button>
+			<div className="workoutActionsButton">
+				<Button
+					label = "Edit"
+					onButtonClick={()=>{console.log("button clicked")}}
+				/>
+					<Button
+					label = "Delete"
+					onButtonClick={()=>{console.log("button clicked")}}
+				/>
+					<Button
+					label = "Duplicate"
+					onButtonClick={()=>{console.log("button clicked")}}
+				/>
+
 			</div>
 			<div className="workoutStepsContainer">
 				<div className="workoutStepsContainerTitle">
 					all steps
 				</div>
-				<div>
+				<div className="stepsContainer">
 					{this.renderSteps()}
 				</div>
 			</div>
 
-			<div>
-			<Link className='item'
-      to={{
-        pathname:'/session' ,
-        state: {workout: this.workout}
-      }}
-      >Start Workout</Link>
+			<div className="workoutActionContainer">
+			<Link 
+				className='workoutStartActionContainer'
+				to={{
+					pathname:'/session' ,
+					state: {workout: this.workout}
+				}}
+      >Start</Link>
 
 			
 			</div>

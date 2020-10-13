@@ -32,7 +32,7 @@ kids section
 
 ### Extra Features
 - add workout levels
-- Creare Workout 
+- Create Workout 
 - Delete workout
 - Edit Workout
 - add audio soundtrack: on/off functionality

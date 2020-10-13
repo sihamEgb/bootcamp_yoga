@@ -1,0 +1,29 @@
+.sessionCardContainer{
+	background-color: rgba(0,0,0,0.9);
+}
+.sessionTitle{
+	text-align: left;
+	margin: 5px;
+	padding: 5px;
+	font-size: 2rem;
+	font-family: 'MuseoModerno', cursive;
+
+}
+.poseContainer{
+	width: 70%;
+	height: auto;
+	margin:auto;
+	background-color: red;
+}
+.imageContainer{
+	background-color: blue;
+	/* width: ; */
+}
+.SessionActionContainer{
+	margin: 2rem;
+}
+.sessionFinishTitle{
+	font-size: 2rem;
+	margin: 1rem;
+	font-family: 'MuseoModerno', cursive;
+}

@@ -14,7 +14,15 @@ const savedWorkout2 = {
 	// time in seconds
 	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7},{id:3,poseId:4,time:10},{id:4,poseId:10,time:10}],
 }
-const workouts = [savedWorkout1,savedWorkout2];
+const savedWorkout3 = {
+	id:2,
+	title:'Temp',
+	// each step 
+	// pose id
+	// time in seconds
+	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7}],
+}
+const workouts = [savedWorkout1,savedWorkout2,savedWorkout3];
 // get data from storage
 // function initData(){
 // }

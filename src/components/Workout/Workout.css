@@ -7,7 +7,7 @@
 .workoutLevel{
 
 }
-.actionsButton{
+.workoutActionsButton{
 
 }
 .workoutStepsContainer{
@@ -15,4 +15,25 @@
 }
 .workoutStepsContainerTitle{
 	font-size: 2rem;
+}
+.stepsContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1rem;
+	
+}
+.workoutStartActionContainer{
+	text-align: center;
+	padding: 5px;
+}
+.startWorkoutLink{
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	text-decoration: none;
+	padding: 5px;
+	border: 2px solid #C24B39;
+	border-radius: 10px;
+	
 }

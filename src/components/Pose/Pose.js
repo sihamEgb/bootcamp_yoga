@@ -79,9 +79,9 @@ class Pose extends React.Component{
     if(this.state.video)
     {
       return (
-          <div>
+          <div className="videoContainer">
             Pose
-            <Video
+            <Video className="videoContentContainer"
              key={this.state.video.id.videoId}
              onVideoSelect={this.onVideoSelect}
              video={this.state.video}
