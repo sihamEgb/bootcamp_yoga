@@ -1,5 +1,5 @@
 .sessionCardContainer{
-	background-color: rgba(0,0,0,0.9);
+	/* background-color: rgba(0,0,0,0.9); */
 }
 .sessionTitle{
 	text-align: left;
@@ -9,14 +9,26 @@
 	font-family: 'MuseoModerno', cursive;
 
 }
-.poseContainer{
+.countdownContainer{
+	background-color: #e4c144;
+	display: block;
+	width: 40%;
+	margin:auto;
+}
+.sessionPoseTitle{
+	font-size: 2rem;
+	text-align: left;
+	padding: 5px;
+}
+.sessionPoseContainer{
 	width: 70%;
 	height: auto;
 	margin:auto;
-	background-color: red;
+	background-color: whitesmoke;
 }
-.imageContainer{
-	background-color: blue;
+.sessionImageContainer{
+	/* background-color: blue; */
+	width:20vw;
 	/* width: ; */
 }
 .SessionActionContainer{

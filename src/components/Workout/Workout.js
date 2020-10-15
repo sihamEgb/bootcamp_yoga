@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import workoutApi from "../../apis/workoutApi"
 // import PoseIcon from './PoseIcon'
 import StepIcon from '../StepIcon/StepIcon';
 import Button from '../core/Button';
@@ -32,16 +32,21 @@ class Workout extends React.Component{
 		}
 		return null;
 	}
-
+	editWorkout(){
+		console.log("editing the workout");
+	}
+	deleteWorkout = () => {
+		workoutApi.deleteWorkout(this.workout.id);
+	}
   render(){
 		return (
-			<div className="workoutContainer">
+			<div className="workoutWorkoutContainer">
 				<div className="workoutTitle">
-					{this.workout.title}
+					Workout: {this.workout.title}
 				</div>
-				<div className="workoutTime">
+				{/* <div className="workoutTime">
 					{this.workout.time}
-				</div>
+				</div> */}
 				<div className="workoutLevel">
 					{this.workout.basic}
 				</div>
@@ -62,9 +67,9 @@ class Workout extends React.Component{
 			</div>
 			<div className="workoutStepsContainer">
 				<div className="workoutStepsContainerTitle">
-					all steps
+					Workout Steps
 				</div>
-				<div className="stepsContainer">
+				<div className="workoutStepsImagesContainer">
 					{this.renderSteps()}
 				</div>
 			</div>

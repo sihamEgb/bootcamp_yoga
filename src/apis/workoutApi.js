@@ -22,10 +22,29 @@ const savedWorkout3 = {
 	// time in seconds
 	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7}],
 }
-const workouts = [savedWorkout1,savedWorkout2,savedWorkout3];
+const savedWorkout4 = {
+	id:2,
+	title:'Temp2',
+	// each step 
+	// pose id
+	// time in seconds
+	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7}],
+}
+const workouts = [savedWorkout1,savedWorkout2,savedWorkout3,savedWorkout4];
+
 // get data from storage
 // function initData(){
 // }
+function deleteWorkout(id){
+	
+	for(let i=0;i<workouts.length;i++)
+	{
+		if(workouts[i].id=== id)
+		{
+			workouts.splice(i,1);
+		}
+	}
+}
 function getWorkouts(){
 	return workouts;
 }
@@ -58,6 +77,7 @@ function editWorkout(editedWorkout){
 
 module.exports = {
 	getWorkouts,
+	deleteWorkout,
 	getWorkoutById,
 	setNewWorkout,
 	editWorkout

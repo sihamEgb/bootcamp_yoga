@@ -42,9 +42,10 @@
 } */
 .homepage-mainAction{
 	font-size: 2rem;
-	text-align: left;
-	margin-left: 25%;
-	margin-top: 1rem;
+	text-align: center;
+	/* margin-left: 25%; */
+	margin:auto;
+	margin-top: 3rem;
 	animation-duration: 0.5s;
   animation-name: effects;
   animation-iteration-count: infinite;
@@ -57,29 +58,24 @@
 }
 .homepage-link{
 	text-decoration: none;
-	color:#e4c144;
+	/* color:#e4c144; */
+	background-color: #e4c144;
 	padding: 8px;
 	border: 2px solid #DF7943;
 	border-radius: 15px;
+	margin:auto;
+	text-align: center;
 }
 .homepage-link:hover{
 	background-color: #e4c144;
-	color:white;
+	color:#693F27;
 }
 
-@keyframes effects {
+/* @keyframes effects {
   from {
 		transform: translateY(-3%);
-
-		/* font-size: 4rem; */
-		/* width: 100%; */
   }
-
   to {
 			transform: translateY(3%);
-
-		/* width: 90%; */
-
-    /* font-size: 4.1rem; */
   }
-}
+} */

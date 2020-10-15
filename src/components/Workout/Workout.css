@@ -1,4 +1,10 @@
-.workoutContainer{
+.workoutWorkoutContainer{
+	/* margin:auto; */
+	/* text-align: center; */
+	font-family: 'MuseoModerno', cursive;
+}
+.workoutTitle{
+	font-size: 2rem;
 
 }
 .workoutTime{
@@ -10,30 +16,31 @@
 .workoutActionsButton{
 
 }
-.workoutStepsContainer{
-
-}
 .workoutStepsContainerTitle{
-	font-size: 2rem;
+	font-size: 1.5rem;
+	margin:left;
 }
-.stepsContainer{
+.workoutStepsContainer{
+	/* margin:auto;
+	display: flex;
+	flex-direction: row; */
+}
+.workoutStepsImagesContainer{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 	padding: 1rem;
-	
 }
 .workoutStartActionContainer{
 	text-align: center;
-	padding: 5px;
-}
-.startWorkoutLink{
-	margin: auto;
-	text-align: center;
+	padding: 1px 10px;
 	font-size: 2rem;
 	text-decoration: none;
-	padding: 5px;
-	border: 2px solid #C24B39;
 	border-radius: 10px;
-	
+	border: 2px solid #DF7943;
+	text-align: center;
+}
+.workoutStartActionContainer:hover{
+	background-color: #DF7943;
 }

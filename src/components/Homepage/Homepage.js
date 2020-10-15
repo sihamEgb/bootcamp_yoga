@@ -38,11 +38,11 @@ class Homepage extends React.Component{
           <div className="homepage-bodyContainer">
             <div className="homepage-contentContainer">
               <div className='homepage-subtitle'>Embrace your own pace</div>
-              <div className='homepage-title'>All you need to know in one app</div>
-              <div className = {`homepage-mainTitle ${titleClassName}`}
+              <div className='homepage-mainTitle'>All you need to know in one app</div>
+              {/* <div className = {`homepage-mainTitle ${titleClassName}`}
                 onMouseEnter={this.hoverStart} 
                 onMouseLeave={this.hoverEnd}
-              > Movement is the song of the body</div>
+              > Movement is the song of the body</div> */}
               <div className='homepage-mainAction '
               >
                 <Link 

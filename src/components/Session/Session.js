@@ -89,9 +89,10 @@ class Session extends React.Component{
 							onComplete={this.onStepComplete}
 				/>,
 				</div>
-				<div className="poseContainer">
-						<div>{currentPose.english_name}</div>
-						<img className="imageContainer"
+				<div className="sessionPoseContainer">
+						<div className="sessionPoseTitle"
+						>{currentPose.english_name}</div>
+						<img className="sessionImageContainer"
 								alt={currentPose.english_name}
 								// className="ui image"
 								src={currentPose.img_url}
