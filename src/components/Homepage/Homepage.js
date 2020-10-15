@@ -27,12 +27,12 @@ class Homepage extends React.Component{
   }
 
   render(){
-    let titleClassName = '';
-    if (this.state.hover) 
-    {
-      console.log("state chanfed",this.state.hover);
-      titleClassName = 'textEffects';
-    } 
+    // let titleClassName = '';
+    // if (this.state.hover) 
+    // {
+    //   console.log("state chanfed",this.state.hover);
+    //   titleClassName = 'textEffects';
+    // } 
 
       return (
           <div className="homepage-bodyContainer">
