@@ -15,7 +15,7 @@ const savedWorkout2 = {
 	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7},{id:3,poseId:4,time:10},{id:4,poseId:10,time:10}],
 }
 const savedWorkout3 = {
-	id:2,
+	id:3,
 	title:'Temp',
 	// each step 
 	// pose id
@@ -23,7 +23,7 @@ const savedWorkout3 = {
 	steps:[{id:1,poseId:2,time:5},{id:2,poseId:8,time:7}],
 }
 const savedWorkout4 = {
-	id:2,
+	id:4,
 	title:'Temp2',
 	// each step 
 	// pose id
